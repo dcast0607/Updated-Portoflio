@@ -210,6 +210,9 @@ a {
         .contactInformationLink {
             text-decoration: underline;
             color: var(--headerTextColor);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 24px;
         }
 
     /*Contact Me Content Section*/
