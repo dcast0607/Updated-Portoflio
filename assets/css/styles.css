@@ -1,9 +1,31 @@
-a {
-    color: white;
-}
+/* Main Variables */
+
+:root {
+    /*Page Wide Variables*/
+    --mainFont: 'Times New Roman', Times, serif; 
+    
+    /*Header Variables*/
+    --underlineColorHeader: rgb(1, 106, 106);
+    --headerBackgroundColor: rgb(45, 45, 45); 
+    --headerTextColor: rgb(1, 106, 106);
+    --titleTextColor: black;
+    --titleBackgroundColor: rgb(1, 106, 106);
+    --mainTitleColor: rgb(45, 45, 45);
+    
+    /*Body Variables*/
+    --bodyBackgroundColor: white; 
+    
+    /*Main Content Variables*/
+    --generalTextColor: rgb(2, 38, 77); 
+    --appTitleTextColor: black; 
+    --contactMeTextColor: black;
+    --workSectionBorderColor: rgb(132, 187, 187);
+    --generalFontSize: 12px;
+    }
+
 
 .container-fluid {
-    background-color: black;
+    background-color: var(--headerBackgroundColor);
 }
 
 #mainBannerImageContainer {
