@@ -1,0 +1,93 @@
+:root {
+    /*Page Wide Variables*/
+    --mainFont: 'Times New Roman', Times, serif; 
+    
+    /*Header Variables*/
+    --headerBackgroundColor: black; 
+    --bannerTextColor: white;
+}
+
+
+@media screen and (min-width: 1201px) {
+    #aboutMeContainerResponsive {
+        display: none;
+    }
+
+    #workSectionContainerResponsive {
+        display: none;
+    }
+
+}
+
+/*Anything smaller than 1200 will get the following properties
+applied to them.*/
+@media screen and (max-width: 1200px) {
+    a {
+        /*
+        TODO: Remove this when you are ready to deploy.
+        */
+        background-color: red;
+    }
+    /*
+    No modifications needed for navbar section.
+    */
+
+    /*
+    No modifications needed for banner image section.
+    */
+
+    /*
+    About Me Section
+    */
+    #aboutMeContainer {
+        display: none;
+    }
+
+    .sectionTitleContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profileImage {
+        height: 200px;
+        width: 85%;
+    }
+    /*
+    About Me Section
+    */
+
+    /*
+    Work Section
+    */
+    #workSectionContainer {
+        display: none;
+    }
+
+    /*
+    Work Section
+    */
+}
+
+/*Anything smaller than 768px will get the following properties
+applied to them.*/
+@media screen and (max-width: 768px) {
+    a {
+        /*
+        TODO: Remove this when you are ready to deploy.
+        */
+        background-color: salmon;
+    }
+
+    #aboutMeContainerResponsive {
+        height: 900px;
+    }
+
+    #profileImageResponsive {
+        height: 450px;
+    }
+
+    .mainProjectImageContainerTextResponsive {
+        left: 70%;
+    }
+}

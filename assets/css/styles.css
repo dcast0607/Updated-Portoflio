@@ -5,56 +5,54 @@
     --mainFont: 'Times New Roman', Times, serif; 
     
     /*Header Variables*/
-    --underlineColorHeader: rgb(1, 106, 106);
-    --headerBackgroundColor: rgb(45, 45, 45); 
-    --headerTextColor: rgb(1, 106, 106);
-    --titleTextColor: black;
-    --titleBackgroundColor: rgb(1, 106, 106);
-    --mainTitleColor: rgb(45, 45, 45);
-    
-    /*Body Variables*/
-    --bodyBackgroundColor: white; 
-    
-    /*Main Content Variables*/
-    --generalTextColor: rgb(2, 38, 77); 
-    --appTitleTextColor: black; 
-    --contactMeTextColor: black;
-    --workSectionBorderColor: rgb(132, 187, 187);
-    --generalFontSize: 12px;
+    --headerBackgroundColor: black; 
+    --bannerTextColor: white;
+    --fullContainerWidth: 100%;
+    --pictureTitleBackgroundColor: black;
+    --pictureTitleColor: white;
     }
 
+
+/*Header Navigation Menu*/
 
 .container-fluid {
     background-color: var(--headerBackgroundColor);
 }
 
+a {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--bannerTextColor);
+}
+/*Header Navigation Menu*/
 #mainBannerImageContainer {
-    width: 100%;
-    height: 500px;
+    width: var(--fullContainerWidth);
+    height: 400px;
 }
 
 #bannerImage {
-    width: 100%;
+    width: var(--fullContainerWidth);
     height: 400px;
     object-fit: cover;
 }
 
 .headerBannerTextContainer {
-    background-color: black;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--pictureTitleBackgroundColor);
+    color: var(--pictureTitleColor);
+    font-family: var(--mainFont);
     font-size: 24px;
     position: absolute;
     top: 350px;
     right: 16px;
   }
+/*Main Banner Image Section*/
+
+/*Main Banner Image Section*/
+
+
 
 /*Main Content Section*/
 
     /*About Me Content Section*/
-        .row {
-            height: 300px;
-        }
         #aboutMeContainer {
             display: flex;
             align-items: center;
@@ -192,11 +190,7 @@
     /*Work Content Section*/
 
 
-    /*Contact Me Content Section*/
-        .row {
-            height: 300px;
-        }
-        
+    /*Contact Me Content Section*/ 
         #contactMeContainer {
             width: 100%;
             height: 300px;
@@ -240,3 +234,137 @@
     /*Contact Me Content Section*/
 
 /*Main Content Section*/
+
+/*
+    Responsive CSS
+*/
+    /*
+        aboutMeSection
+    */
+
+    #aboutMeContainerResponsive {
+        width: 100%;
+        height: 600px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: teal;
+    }
+
+    .sectionTitleResponsive {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sectionTitleTextResponsive{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 32px;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .profileImageContainerResponsive {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profileImageResponsive {
+        height: 250px;
+        width:  60%;
+        object-fit: cover;
+        border: 2px solid black;
+        border-radius: 50px;
+    }
+
+    .aboutMeContainerItemResponsive {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .aboutMeDetailsTextResponsive {
+        height: 100%;
+        width: 80%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    /*
+        aboutMeSection
+    */
+
+    /*
+        Start of Work Section
+    */
+    #workSectionContainerResponsive {
+        width: 100%;
+        height: 1600px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: teal;
+    }
+
+    .mainProjectContainerResponsive {
+        width: 100%;
+        height: 50%;
+    }
+
+    .mainProjectImageContainerResponsive {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mainProjectImageResponsive {
+        height: 700px;
+        width:  85%;
+        object-fit: cover;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .mainProjectImageContainerTextResponsive {
+        background-color: black;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        position: relative;
+        top: -100px;
+        left: 75%;
+    }
+
+    .otherProjectsContainerResponsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .otherProjectsImageResponsive {
+        height: 380px;
+        width: 100%;
+        object-fit: cover;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    /*
+        End of Work Section
+    */
+
+/*
+    Responsive CSS
+*/
