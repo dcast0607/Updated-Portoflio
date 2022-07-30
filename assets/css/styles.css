@@ -67,6 +67,7 @@ a {
         .aboutMeContainerItem {
             display: flex;
             align-items: center;
+            height: 300px;
         }
 
         .aboutMeTitleContainer {
@@ -193,7 +194,7 @@ a {
     /*Contact Me Content Section*/ 
         #contactMeContainer {
             width: 100%;
-            height: 300px;
+            height: 150px;
             border-style: solid;
             border-width: 3px;
             border-color: teal;
@@ -207,6 +208,8 @@ a {
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100%;
+            height: 150px;
         }
 
         .contactMeDetails {
@@ -238,6 +241,51 @@ a {
 /*
     Responsive CSS
 */
+
+    /*
+    Navigation Header
+    */
+
+    #navigationBarResponsive {
+        background-color: black;
+    }
+
+    .webpageTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        padding-top: 10px;
+    }
+
+    .pageTitle {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+    }
+
+    .navBarMenuResponsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    #navigationBarContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbarNavItems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*
+    Navigation Header
+    */
+
     /*
         aboutMeSection
     */
@@ -274,8 +322,8 @@ a {
     }
 
     #profileImageResponsive {
-        height: 250px;
-        width:  60%;
+        height: 300px;
+        width:  90%;
         object-fit: cover;
         border: 2px solid black;
         border-radius: 50px;
@@ -308,7 +356,7 @@ a {
     */
     #workSectionContainerResponsive {
         width: 100%;
-        height: 1600px;
+        height: 1200px;
         border-style: solid;
         border-width: 3px;
         border-color: teal;
@@ -328,7 +376,7 @@ a {
     }
 
     #mainProjectImageResponsive {
-        height: 700px;
+        height: 500px;
         width:  85%;
         object-fit: cover;
         border: 2px solid black;
@@ -347,15 +395,14 @@ a {
 
     .otherProjectsContainerResponsive {
         display: flex;
-        justify-content: center;
         align-items: center;
         height: 100%;
         width: 100%;
     }
 
     .otherProjectsImageResponsive {
-        height: 380px;
-        width: 100%;
+        height: 250px;
+        width: 95%;
         object-fit: cover;
         border: 2px solid black;
         border-radius: 10px;
@@ -363,6 +410,51 @@ a {
 
     /*
         End of Work Section
+    */
+
+    /*
+    Contact Me Section
+    */  
+
+    #contactMeResponsiveContainer {
+        height: 200px;
+        width: 100%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: teal;
+    }
+    .sectionTitleResponsive {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 32px;
+        text-align: right;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .contactMeSectionTextContainerResponsive {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactMeDetailsResponsive {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contactInformationResponsive {
+        display: inline;
+        padding: 10px;
+        font-size: large;
+    }
+    /*
+    Contact Me Section
     */
 
 /*

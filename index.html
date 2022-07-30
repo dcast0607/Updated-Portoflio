@@ -13,7 +13,8 @@
 </head>
 <body>
 <!--Navigation Bar-->
-    <div class="container-fluid">
+<section id="navigationBar">
+    <nav class="container-fluid">
         <nav class="navbar narvbar-primary navbar-expand" style="background-color: black">
             <a class="navbar-brand" href="#">Daniel Castro's Portfolio Website</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,20 +37,50 @@
                 </ul>
             </div>
         </nav>
-    </div>
+    </nav>
+</section>
+
+<section id="navigationBarResponsive">
+    <section class="webpageTitle">
+        <h2 class="pageTitle">Daniel Castro's Portfolio Website</h2>
+    </section>
+    <section class="navBarMenuResponsive">
+        <nav class="container-fluid">
+            <nav id="navigationBarContainer" class="navbar narvbar-primary navbar-expand" style="background-color: black">
+                <div class="collapse navbar-collapse" id="navbarNavItems">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutMeContainer">About Me<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#workSectionContainer">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactMeContainer">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/dcast0607">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </section>
+</section>
 <!--Navigation Bar-->
+
 <!--Header Banner-->
-    <div class="mainBannerImageContainer">
+    <section class="mainBannerImageContainer">
         <img id="bannerImage" src="./assets/images/IMG_3628.jpg" class="img-fluid" alt="Responsive image">
         <container class="headerBannerTextContainer">
             &nbsp;
             Carlsbad Flower Field
             &nbsp;
         </container>
-    </div>
+    </section>
 <!--Header Banner-->
 <!--About Me Section-->
-    <div id="aboutMeContainer">
+    <section id="aboutMeContainer">
         <div class="row">
             <div class="col-1 aboutMeContainerItem aboutMeTitleContainer">
                 <span class="sectionTitle">
@@ -78,9 +109,9 @@
                 </span>
             </div>
         </div>
-    </div>
+    </section>
     <!--Responsive About Me Section-->
-    <div id="aboutMeContainerResponsive">
+    <section id="aboutMeContainerResponsive">
         <div class="row">
             <div class="sectionTitleResponsive">
                 <div class="sectionTitleTextResponsive">
@@ -113,12 +144,12 @@
                 </span>
             </div>
         </div>
-    </div>
+    </section>
     <!--End of Responsive About Me Section-->
 <!--About Me Section-->
 
 <!--Work Section-->
-    <div id="workSectionContainer">
+    <section id="workSectionContainer">
         <div class="row h-100">
             <div class="col-1 workContainerItem workTitleContainer">
                 <span class="sectionTitle">
@@ -172,9 +203,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--Work Section Responsive-->
-    <div id="workSectionContainerResponsive">
+    <section id="workSectionContainerResponsive">
         <div class="row">
             <div class="sectionTitleResponsive">
                 <div class="sectionTitleTextResponsive">
@@ -198,9 +229,19 @@
             <div class="otherProjectsContainerResponsive">
                 <div class="col">
                     <img class="otherProjectsImageResponsive" src="./assets/images/puzzles.jpeg" alt-text="Project 1">
+                    <container class="otherProjectImageContainerText">
+                        &nbsp;
+                        Puzzles App
+                        &nbsp;
+                    </container>
                 </div>
                 <div class="col">
                     <img class="otherProjectsImageResponsive" src="./assets/images/puzzles.jpeg" alt-text="Daniel's Profile Picture">
+                    <container class="otherProjectImageContainerText">
+                        &nbsp;
+                        Puzzles App
+                        &nbsp;
+                    </container>
                 </div>
             </div>
         </div>
@@ -208,23 +249,28 @@
             <div class="otherProjectsContainerResponsive">
                 <div class="col">
                     <img class="otherProjectsImageResponsive" src="./assets/images/puzzles.jpeg" alt-text="Project 1">
+                    <container class="otherProjectImageContainerText">
+                        &nbsp;
+                        Puzzles App
+                        &nbsp;
+                    </container>
                 </div>
                 <div class="col">
                     <img class="otherProjectsImageResponsive" src="./assets/images/puzzles.jpeg" alt-text="Daniel's Profile Picture">
+                    <container class="otherProjectImageContainerText">
+                        &nbsp;
+                        Puzzles App
+                        &nbsp;
+                    </container>
                 </div>
-                <container class="otherProjectImageContainerText">
-                    &nbsp;
-                    Puzzles App
-                    &nbsp;
-                </container>
             </div>
         </div>
-    </div>
+    </section>
     <!--End of Work Section Responsive-->
 <!--Work Section-->
 
 <!--Contact Me Section-->
-    <div id="contactMeContainer">
+    <section id="contactMeContainer">
         <div class="row">
             <div class="col-1 contactMeContainerItem contactMeTitleContainer">
                 <span class="sectionTitle">
@@ -261,7 +307,45 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
+    <!--Contact Me Responsive Section-->
+    <section id="contactMeResponsiveContainer">
+        <div class="row">
+            <div class="sectionTitleResponsive">
+                Contact Me
+            </div>
+            <div class="contactMeSectionTextContainerResponsive">
+                <div class="contactMeContainerItem">
+                    <ul class="contactMeDetailsResponsive">
+                        <!--Creating a class for my "li" elements so that I can apply styling elements
+                        as well as modify the display properties.-->
+                        <li class="contactInformationResponsive">
+                            <!--Creating a contact information anchor class, I want my links to display
+                            constant styling attributes. Primarily, I want the links to stay consistent
+                            in color when the user visits them or doesn't.-->
+                            <a class="contactInformationLink" href="tel:555-555-5555">555.555.5555</a>
+                        </li>
+    
+                        <li class="contactInformationResponsive">
+                            <a class="contactInformationLink" href="mailto:lernantino@website.com">lernantino@website.com</a>
+                        </li>
+    
+                        <li class="contactInformationResponsive">
+                            <a class="contactInformationLink" href="https://github.com/dcast0607">Github</a>
+                        </li>
+                        <li class="contactInformationResponsive">
+                            <a class="contactInformationLink" href="https://www.twitter.com">Twitter</a>
+                        </li>
+                        <li class="contactInformationResponsive">
+                            <a class="contactInformationLink" href="https://www.spotify.com">Spotify</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End of Contact Me Responsive Section-->
 <!--Contact Me Section-->
 </body>
 </html> 

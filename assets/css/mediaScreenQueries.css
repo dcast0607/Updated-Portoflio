@@ -9,6 +9,10 @@
 
 
 @media screen and (min-width: 1201px) {
+    #navigationBarResponsive {
+        display: none;
+    }
+
     #aboutMeContainerResponsive {
         display: none;
     }
@@ -17,17 +21,15 @@
         display: none;
     }
 
+    #contactMeResponsiveContainer {
+        display: none;
+    }
+
 }
 
 /*Anything smaller than 1200 will get the following properties
 applied to them.*/
 @media screen and (max-width: 1200px) {
-    a {
-        /*
-        TODO: Remove this when you are ready to deploy.
-        */
-        background-color: red;
-    }
     /*
     No modifications needed for navbar section.
     */
@@ -35,6 +37,10 @@ applied to them.*/
     /*
     No modifications needed for banner image section.
     */
+
+    #navigationBar {
+        display: none;
+    }
 
     /*
     About Me Section
@@ -49,10 +55,10 @@ applied to them.*/
         align-items: center;
     }
 
-    #profileImage {
-        height: 200px;
-        width: 85%;
+    #profileImageResponsive {
+        height: 250px;
     }
+
     /*
     About Me Section
     */
@@ -67,27 +73,41 @@ applied to them.*/
     /*
     Work Section
     */
+
+    /*
+        Contact Me Section
+    */
+    #contactMeContainer {
+        display: none;
+    }
+    /*
+        Contact Me Section
+    */
 }
 
 /*Anything smaller than 768px will get the following properties
 applied to them.*/
 @media screen and (max-width: 768px) {
-    a {
-        /*
-        TODO: Remove this when you are ready to deploy.
-        */
-        background-color: salmon;
-    }
 
     #aboutMeContainerResponsive {
-        height: 900px;
+        height: 800px;
     }
 
     #profileImageResponsive {
-        height: 450px;
+        height: 250px;
     }
 
     .mainProjectImageContainerTextResponsive {
-        left: 70%;
+        left: 55%;
+    }
+
+    .otherProjectImageContainerText {
+        right: 40px;
+    }
+
+    .contactInformationResponsive {
+        display: block;
     }
 }
+
+
