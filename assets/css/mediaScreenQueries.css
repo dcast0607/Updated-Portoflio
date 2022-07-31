@@ -9,6 +9,8 @@
 
 
 @media screen and (min-width: 1201px) {
+
+
     #navigationBarResponsive {
         display: none;
     }
@@ -30,13 +32,6 @@
 /*Anything smaller than 1200 will get the following properties
 applied to them.*/
 @media screen and (max-width: 1200px) {
-    /*
-    No modifications needed for navbar section.
-    */
-
-    /*
-    No modifications needed for banner image section.
-    */
 
     #navigationBar {
         display: none;
@@ -68,6 +63,10 @@ applied to them.*/
     */
     #workSectionContainer {
         display: none;
+    }
+
+    .mainProjectImageContainerTextResponsive {
+        left: 60%;
     }
 
     .otherProjectImageContainerText {
