@@ -1,4 +1,6 @@
-# Updated-Portoflio# Lernantino-Main-Homepage
+# Updated-Portoflio 
+
+## Lernantino-Main-Homepage
 
 ## Objective:
 Build a personal portfolio website that prospective employers can use to access your personal projects. This website should also demonstrate your expertise with formatting an HTML webpage so that it looks like a professional portfolio page. This website should also be responsive and the user interface should facilitate access to your personal projects.
