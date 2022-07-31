@@ -10,6 +10,18 @@
     --fullContainerWidth: 100%;
     --pictureTitleBackgroundColor: black;
     --pictureTitleColor: white;
+    --imageAspectRatio: cover;
+    --smallFontSize: 18px;
+    --mediumFontSize: 24px;
+    --largeFontSize: 32px;
+    --solidBorder: solid;
+    --borderWidth: 3px;
+    --tealBorder: teal;
+    --fullWidth: 100%;
+    --rightBorder: 3px solid teal;
+    --imageBorder: 2px solid black;
+    --imageTitleBackgroundColor: black;
+    --imageTitleTextColor: white;
     }
 
 
@@ -20,7 +32,7 @@
 }
 
 a {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--mainFont);
     color: var(--bannerTextColor);
 }
 /*Header Navigation Menu*/
@@ -32,17 +44,17 @@ a {
 #bannerImage {
     width: var(--fullContainerWidth);
     height: 400px;
-    object-fit: cover;
+    object-fit: var(--imageAspectRatio);
 }
 
 .headerBannerTextContainer {
     background-color: var(--pictureTitleBackgroundColor);
     color: var(--pictureTitleColor);
     font-family: var(--mainFont);
-    font-size: 24px;
+    font-size: var(--mediumFontSize);
     position: absolute;
-    top: 350px;
-    right: 16px;
+    top: 25%;
+    right: 5%;
   }
 /*Main Banner Image Section*/
 
@@ -57,11 +69,11 @@ a {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
+            width: var(--fullWidth);
             height: 300px;
-            border-style: solid;
-            border-width: 3px;
-            border-color: teal;
+            border-style: var(--solidBorder);
+            border-width: var(--borderWidth);
+            border-color: var(--tealBorder);
         }
 
         .aboutMeContainerItem {
@@ -71,12 +83,12 @@ a {
         }
 
         .aboutMeTitleContainer {
-            border-right: 3px solid teal;
+            border-right: var(--rightBorder);
         }
 
         .sectionTitle{
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 32px;
+            font-family: var(--mainFont);
+            font-size: var(--largeFontSize);
             text-align: right;
             font-weight: bold;
         }
@@ -90,14 +102,14 @@ a {
         #profileImage {
             height: 275px;
             width:  95%;
-            object-fit: cover;
-            border: 2px solid black;
+            object-fit: var(--imageAspectRatio);
+            border: var(--imageBorder);
             border-radius: 50px;
         }
 
         .aboutMeDetailsText {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 18px;
+            font-family: var(--mainFont);
+            font-size: var(--smallFontSize);
             text-align: center;
         }
 
@@ -107,26 +119,23 @@ a {
     /*Work Content Section*/
 
         #workSectionContainer {
-            width: 100%;
+            width: var(--fullContainerWidth);
             height: 1200px;
-            border-style: solid;
-            border-width: 3px;
-            border-color: teal;
+            border-style: var(--solidBorder);
+            border-width: var(--borderWidth);
+            border-color: var(--tealBorder);
         }
 
         #workContainer {
-            width: 100%;
+            width: var(--fullContainerWidth);
             height: 1200px;
-            border-style: solid;
-            border-width: 3px;
-            border-color: teal;
+            border-style: var(--solidBorder);
+            border-width: var(--borderWidth);
+            border-color: var(--tealBorder);
         }
 
         .workTitleContainer {
-            border-right: 3px solid teal;
-        }
-
-        .workContainerItem {
+            border-right: var(--borderWidth) var(--solidBorder) var(--tealBorder);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -141,26 +150,26 @@ a {
         #mainProjectImage {
             height: 550px;
             width:  85%;
-            object-fit: cover;
-            border: 2px solid black;
+            object-fit: var(--imageAspectRatio);
+            border: var(--imageBorder);
             border-radius: 20px;
         }
         
         .mainProjectImageContainerText {
-            background-color: black;
-            color: white;
+            background-color: var(--imageTitleBackgroundColor);
+            color: var(--imageTitleTextColor);
             font-family: 'Times New Roman', Times, serif;
-            font-size: 24px;
+            font-size: var(--mediumFontSize);
             position: absolute;
-            top: 500px;
-            right: 200px;
+            top: 40%;
+            right: 10%;
           }
 
         .otherProjectsContainer {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: var(--fullContainerWidth);
         }
 
         .otherProjectsImageContainer{
@@ -171,20 +180,20 @@ a {
 
         .otherProjectsImage {
             height: 200px;
-            width:  100%;
-            object-fit: cover;
-            border: 2px solid black;
+            width:  var(--fullContainerWidth);
+            object-fit: var(--imageAspectRatio);
+            border: var(--imageBorder);
             border-radius: 10px;
         }
 
         .otherProjectImageContainerText {
-            background-color: black;
-            color: white;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 16px;
+            background-color: var(--imageTitleBackgroundColor);
+            color: var(--imageTitleTextColor);
+            font-family: var(--mainFont);
+            font-size: var(--smallFontSize);
             position: absolute;
-            top: 150px;
-            right: 60px;
+            top: 70%;
+            right: 5%;
           }
 
 
@@ -193,28 +202,28 @@ a {
 
     /*Contact Me Content Section*/ 
         #contactMeContainer {
-            width: 100%;
+            width: var(--fullContainerWidth);
             height: 150px;
-            border-style: solid;
-            border-width: 3px;
-            border-color: teal;
+            border-style: var(--solidBorder);
+            border-width: var(--borderWidth);
+            border-color: var(--tealBorder);
         }
 
         .contactMeTitleContainer {
-            border-right: 3px solid teal;
+            border-right: var(--borderWidth) var(--solidBorder) var(--tealBorder);
         }
 
         .contactMeContainerItem {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
+            width: var(--fullContainerWidth);
             height: 150px;
         }
 
         .contactMeDetails {
             height: 100%;
-            width: 100%;
+            width: var(--fullContainerWidth);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -223,15 +232,15 @@ a {
         .contactInformation {
             display: inline;
             padding: 10px;
-            font-size: large;
+            font-size: var(--largeFontSize);
         }
         
         .contactInformationLink {
             text-decoration: underline;
             color: var(--headerTextColor);
-            font-family: 'Times New Roman', Times, serif;
+            font-family: var(--mainFont);
             font-weight: bold;
-            font-size: 24px;
+            font-size: var(--mediumFontSize);
         }
 
     /*Contact Me Content Section*/
