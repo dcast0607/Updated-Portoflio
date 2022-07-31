@@ -70,6 +70,10 @@ applied to them.*/
         display: none;
     }
 
+    .otherProjectImageContainerText {
+        right: 10%;
+    }
+
     /*
     Work Section
     */

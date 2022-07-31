@@ -22,8 +22,12 @@
     --imageBorder: 2px solid black;
     --imageTitleBackgroundColor: black;
     --imageTitleTextColor: white;
+    --imagePosition: top;
     }
 
+body {
+    background-color: lightsalmon;
+}
 
 /*Header Navigation Menu*/
 
@@ -36,7 +40,7 @@ a {
     color: var(--bannerTextColor);
 }
 /*Header Navigation Menu*/
-#mainBannerImageContainer {
+.mainBannerImageContainer {
     width: var(--fullContainerWidth);
     height: 400px;
 }
@@ -44,7 +48,7 @@ a {
 #bannerImage {
     width: var(--fullContainerWidth);
     height: 400px;
-    object-fit: var(--imageAspectRatio);
+    object-fit: cover;
 }
 
 .headerBannerTextContainer {
@@ -80,9 +84,6 @@ a {
             display: flex;
             align-items: center;
             height: 300px;
-        }
-
-        .aboutMeTitleContainer {
             border-right: var(--rightBorder);
         }
 
@@ -126,19 +127,18 @@ a {
             border-color: var(--tealBorder);
         }
 
-        #workContainer {
-            width: var(--fullContainerWidth);
-            height: 1200px;
-            border-style: var(--solidBorder);
-            border-width: var(--borderWidth);
-            border-color: var(--tealBorder);
-        }
-
         .workTitleContainer {
             border-right: var(--borderWidth) var(--solidBorder) var(--tealBorder);
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .imageLinkContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: var(--fullContainerWidth);
         }
 
         .mainProjectImageContainer {
@@ -153,6 +153,7 @@ a {
             object-fit: var(--imageAspectRatio);
             border: var(--imageBorder);
             border-radius: 20px;
+            object-position: var(--imagePosition);
         }
         
         .mainProjectImageContainerText {
@@ -178,12 +179,20 @@ a {
             margin-left: 20px;
         }
 
+        .otherImagesLinkContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 95%;
+        }
+
         .otherProjectsImage {
             height: 200px;
             width:  var(--fullContainerWidth);
             object-fit: var(--imageAspectRatio);
             border: var(--imageBorder);
             border-radius: 10px;
+            object-position: var(--imagePosition);
         }
 
         .otherProjectImageContainerText {
@@ -211,9 +220,6 @@ a {
 
         .contactMeTitleContainer {
             border-right: var(--borderWidth) var(--solidBorder) var(--tealBorder);
-        }
-
-        .contactMeContainerItem {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -256,28 +262,28 @@ a {
     */
 
     #navigationBarResponsive {
-        background-color: black;
+        background-color: var(--headerBackgroundColor);
     }
 
     .webpageTitle {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: black;
+        background-color: var(--headerBackgroundColor);
         padding-top: 10px;
     }
 
     .pageTitle {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 24px;
-        color: white;
+        font-family: var(--mainFont);
+        font-size: var(--mediumFontSize);
+        color: var(--bannerTextColor);
     }
 
     .navBarMenuResponsive {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: black;
+        background-color: var(--headerBackgroundColor);
     }
 
     #navigationBarContainer {
@@ -300,15 +306,15 @@ a {
     */
 
     #aboutMeContainerResponsive {
-        width: 100%;
+        width: var(--fullContainerWidth);
         height: 600px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: teal;
+        border-style: var(--solidBorder);
+        border-width: var(--borderWidth);
+        border-color: var(--tealBorder);
     }
 
     .sectionTitleResponsive {
-        width: 100%;
+        width: var(--fullContainerWidth);
         height: 50px;
         display: flex;
         align-items: center;
@@ -316,14 +322,14 @@ a {
     }
 
     .sectionTitleTextResponsive{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 32px;
+        font-family: var(--mainFont);
+        font-size: var(--largeFontSize);
         text-align: right;
         font-weight: bold;
     }
 
     .profileImageContainerResponsive {
-        width: 100%;
+        width: var(--fullContainerWidth);
         height: 50%;
         display: flex;
         align-items: center;
@@ -333,13 +339,13 @@ a {
     #profileImageResponsive {
         height: 300px;
         width:  90%;
-        object-fit: cover;
-        border: 2px solid black;
+        object-fit: var(--imageAspectRatio);
+        border: var(--imageBorder);
         border-radius: 50px;
     }
 
     .aboutMeContainerItemResponsive {
-        width: 100%;
+        width: var(--fullContainerWidth);
         height: 40%;
         display: flex;
         align-items: center;
@@ -350,8 +356,8 @@ a {
     .aboutMeDetailsTextResponsive {
         height: 100%;
         width: 80%;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 18px;
+        font-family: var(--mainFont);
+        font-size: var(--smallFontSize);
         text-align: center;
     }
 
@@ -364,20 +370,27 @@ a {
         Start of Work Section
     */
     #workSectionContainerResponsive {
-        width: 100%;
+        width: var(--fullContainerWidth);
         height: 1200px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: teal;
+        border-style: var(--solidBorder);
+        border-width: var(--borderWidth);
+        border-color: var(--tealBorder);
+    }
+
+    .imageLinkContainerResponsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .mainProjectContainerResponsive {
-        width: 100%;
+        width: var(--fullContainerWidth);
         height: 50%;
     }
 
     .mainProjectImageContainerResponsive {
-        width: 100%;
+        width: var(--fullContainerWidth);
         height: 100%;
         display: flex;
         align-items: center;
@@ -387,33 +400,40 @@ a {
     #mainProjectImageResponsive {
         height: 500px;
         width:  85%;
-        object-fit: cover;
-        border: 2px solid black;
+        object-fit: var(--imageAspectRatio);
+        border: var(--imageBorder);
         border-radius: 20px;
     }
 
     .mainProjectImageContainerTextResponsive {
-        background-color: black;
-        color: white;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 24px;
+        background-color: var(--imageTitleBackgroundColor);
+        color: var(--imageTitleTextColor);
+        font-family: var(--mainFont);
+        font-size: var(--mediumFontSize);
         position: relative;
-        top: -100px;
-        left: 75%;
+        top: -90px;
+        left: 70%;
+    }
+
+    .otherImagesLinkContainerResponsive { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--fullContainerWidth)
     }
 
     .otherProjectsContainerResponsive {
         display: flex;
         align-items: center;
         height: 100%;
-        width: 100%;
+        width: var(--fullContainerWidth);
     }
 
     .otherProjectsImageResponsive {
         height: 250px;
         width: 95%;
-        object-fit: cover;
-        border: 2px solid black;
+        object-fit: var(--imageAspectRatio);
+        border: var(--imageBorder);
         border-radius: 10px;
     }
 
@@ -427,21 +447,21 @@ a {
 
     #contactMeResponsiveContainer {
         height: 200px;
-        width: 100%;
-        border-style: solid;
-        border-width: 3px;
-        border-color: teal;
+        width: var(--fullContainerWidth);
+        border-style: var(--solidBorder);
+        border-width: var(--borderWidth);
+        border-color: var(--tealBorder);
     }
     .sectionTitleResponsive {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 32px;
+        font-family: var(--mainFont);
+        font-size: var(--largeFontSize);
         text-align: right;
         font-weight: bold;
         margin-top: 10px;
     }
 
     .contactMeSectionTextContainerResponsive {
-        width: 100%;
+        width: var(--fullContainerWidth);
         height: 100px;
         display: flex;
         align-items: center;
@@ -450,7 +470,7 @@ a {
 
     .contactMeDetailsResponsive {
         height: 100%;
-        width: 100%;
+        width: var(--fullContainerWidth);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -460,7 +480,7 @@ a {
     .contactInformationResponsive {
         display: inline;
         padding: 10px;
-        font-size: large;
+        font-size: var(--largeFontSize);
     }
     /*
     Contact Me Section
